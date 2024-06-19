@@ -1,0 +1,15 @@
+<div id="games-container">
+{{#each games}}
+  <div class="game">
+    <h2>{{title}}</h2>
+    <p><strong>System:</strong> {{system}}</p>
+    <p><strong>Version:</strong> {{version}}</p>
+    <p><strong>Compatibility:</strong>
+      Minimum:
+      {{compatibility.minimum}}, Verified:
+      {{compatibility.verified}}, Maximum:
+      {{compatibility.maximum}}</p>
+    <p><a href="{{manifest}}">Manifest Link</a></p>
+  </div>
+{{/each}}
+</div>
